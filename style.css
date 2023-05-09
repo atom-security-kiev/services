@@ -1,0 +1,305 @@
+body {
+    margin: 0;
+    /**/display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+ 
+   
+}
+header {
+    height: 80px;
+    width: 100%;
+    background: radial-gradient(#4444445d,rgba(17, 17, 17, 0.411) );
+    border: rgb(211, 116, 0) solid 3px;
+    border-radius: 3px;
+   border-left: none;
+   border-right: none;
+   border-top: none;
+
+   position: fixed;
+   z-index: 1000;
+
+   display: flex;
+  
+}
+#lang_cont {
+    position: relative;
+    display: inline-block;
+
+    flex: 1;
+}
+ #chosen_lan {
+    position: absolute;
+    /**/display: none;
+ }   
+
+#language {
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(rgb(17, 17, 17), #444 );
+    border: bisque solid 2px;
+    border-radius: 10px;
+
+    color: bisque;
+    text-align: center;
+    line-height: 30px;   /*для выравнивания текста*/
+
+    text-decoration: none;
+    
+    
+}
+#language a, #language_main a {
+    text-decoration: none;
+    color: bisque;
+}
+#language:hover {
+    opacity: .7;
+}
+#language_main {
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(rgb(17, 17, 17), #444444 );
+    border: rgb(211, 116, 0) solid 2px;
+    border-radius: 5px;
+
+    color: bisque;
+    text-align: center;
+    line-height: 30px; 
+    
+    margin-top: 15px;
+}
+#lang_cont:hover #chosen_lan {
+    display: block;
+}
+#language_main:hover {
+    color: rgb(211, 116, 0);
+}
+/*********************************************/
+.header_href {
+ flex: 9; 
+    
+display: flex;
+}
+.header_href_txt {
+flex: 1 1;
+text-align: center;
+
+margin-top: 30px;/*отступ для позиции по центру*/
+}
+.header_href_txt_a {
+    text-decoration: none;
+    font-size: 20px;
+    color: bisque;  
+
+    border: 1px solid rgba(211, 116, 0, 0.418);
+    padding: 10px;
+    border-radius: 10px;
+    background: radial-gradient(rgb(17, 17, 17), #444444 );
+}
+.header_href_txt_a:hover {
+    background: radial-gradient(rgba(17, 17, 17, 0.384), #44444450 );
+}
+/********************************************/
+#first {
+   /* margin-top: 120px;
+    position: absolute;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+
+ /**/background: radial-gradient(bisque,#333 );
+/*background-image: url(bg.jpg);
+background-repeat: no-repeat;
+background-size: cover;*/
+border-radius: 3px;
+
+height: 1300px;
+width: 100%;
+}
+#space_under_fixed {
+    height: 78px;
+    width: 100%;
+
+    background: radial-gradient(#444444,rgb(17, 17, 17) )
+}
+#h1 {
+    display: flex;
+    justify-content: center;  
+
+    background-color: #000;
+width: 100%;
+
+border-bottom-left-radius: 30%;
+border-bottom-right-radius: 30%;
+   
+} /**/
+h1 {
+/*font-size: 65px;
+color: bisque;
+text-align: center;
+text-shadow: 1px 0 1px #000,   
+0 3px 3px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;
+background-color: black;*/
+
+
+height: 120px;
+width: 330px;
+
+background-image: url(logo0002.jpg);
+background-size: 330px 120px;
+
+/*border: #000 solid 5px;*/
+/*border-radius: 5px;*/
+}
+#first_sub {
+    color: bisque;
+    text-align: center;
+    text-shadow: 1px 0 1px #000, /*контур цифры */
+    0 3px 3px #000, 
+    -1px 0 1px #000, 
+    0 -1px 1px #000;
+    
+   /* position: absolute;*/
+   /* top: 200px;*/
+
+    line-height: 40px;
+    height: 200px;     /*  фиксация высоты дива */
+    overflow-x:hidden; /*текст не выходит за рамки дива но пропадет если выйдет за рамки*/
+}
+.for_text {
+   /**/ display: flex;
+    /**/justify-content: center;
+   
+}
+.text { 
+    /*position: absolute;*/
+   /* top: 450px;*/
+    text-align: center;
+    max-width: 390px;
+
+    font-size: 20px;   
+    font-weight: 700;
+    /*background-color: rgba(240, 248, 255, 0.466);*/
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    background-image: url(test_gif.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    color: aliceblue;
+   /* height: 385px;*/ /*высота в телефонном режиме*/
+}
+.for_text_two {
+   /* display: flex;
+    justify-content: center;*/
+   /* top: 750px;*/
+   /* position: absolute;*/
+    max-width: 390px;
+    text-align: center;
+}
+.power_serwices {
+    font-size: 18px;
+    font-weight: bold;
+   
+    color: bisque;
+    text-align: center;
+    text-shadow: 1px 0 1px #000, /*контур цифры */
+    0 3px 3px #000, 
+    -1px 0 1px #000, 
+    0 -1px 1px #000;
+
+    background-color: #3333339d;
+    border-radius: 20px;
+    padding: 5px;
+}
+.li_power_serwices {
+    line-height: 1.3em;
+    font-weight: bolder;
+}
+/**/
+.for_text_three {
+   /* display: flex;
+    justify-content: center;*/
+   /* top: 1200px;*/
+   /* position: absolute;*/
+    max-width: 390px;
+   
+}
+.detective_services {
+    font-size: 18px;
+    font-weight: bold;
+
+    color: bisque;
+    text-align: center;
+    text-shadow: 1px 0 1px #000, /*контур цифры */
+    0 3px 3px #000, 
+    -1px 0 1px #000, 
+    0 -1px 1px #000;
+
+    background-color: rgba(211, 116, 0, 0.521);
+    border-radius: 20px;
+    padding: 7px;
+}
+.li_detective_services {
+    line-height: 1.3em;
+    font-weight: bolder;
+}
+/**/
+#footer {
+    height: 140px;
+    width: 100%;
+
+/*top: 1710px;                 отступ
+position: absolute;*/
+
+background-color: #333;
+border-top:  rgb(211, 116, 0) solid 3px;
+
+display: flex;
+}
+#footer_a {
+flex: 9;
+}
+#footer_b {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+.footer_messangers {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+     cursor: pointer;
+   /* border: #000 solid 1px;*/
+}
+#telegram {
+    background-image: url(imgMessanger/telegram.png);
+    background-size: 30px 30px;
+}
+#watsapp {
+    background-size: 30px 30px;
+    background-image: url(imgMessanger/watsapp.png);
+}
+#viber {
+    background-size: 30px 30px;
+    background-image: url(imgMessanger/viber.png);
+}
+/**/
+#telephone,#email,#adress {
+    color: bisque;
+    font-size: 18px;
+    font-weight: bolder;
+
+    margin-top: 7px;
+    text-align: center;
+    padding: 3px;
+}
