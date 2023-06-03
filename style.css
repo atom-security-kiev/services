@@ -324,6 +324,28 @@ border-bottom-right-radius: 30%;
     max-height: 300px;
     max-width: 390px;
 }*/
+#labirint {
+    width: 35vh;
+    height: 25vh;
+    margin: 10px;
+    margin-top: 0;
+    
+    background-image: url(bg_img/image05.jpeg);
+    background-size: cover;
+    
+    border-radius: 20px;
+    padding: 10px;
+}
+.li_tr_shoot {
+    line-height: 1.3em;
+    font-weight: bolder;
+
+    width: 30vh;
+    margin: 10px;
+    padding: 10px;
+    border: rgba(255, 228, 196, 0.363) solid 2px;
+    border-radius: 20px;
+}
 /**/
 #footer {
    /* height: 22vh;    не фиксирую размер футера закоментив эту строку*/
